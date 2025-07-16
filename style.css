@@ -193,3 +193,48 @@ body {
     font-size: 18px;
   }
 }
+
+.contact-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.email-btn {
+  background-color: #0c3c5f;
+  color: #fff;
+}
+
+.email-btn:hover {
+  background-color: #15406a;
+}
+
+.phone-btn {
+  background-color: #fdd835;
+  color: #333;
+}
+
+.phone-btn:hover {
+  background-color: #fbc02d;
+}
+ 
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
