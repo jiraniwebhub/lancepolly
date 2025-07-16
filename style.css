@@ -1,0 +1,195 @@
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.main-header {
+  background: #1e3a5f; /* Deep blue for trust */
+  color: white;
+  text-align: center;
+  padding: 30px 20px 10px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.top-logo {
+  width: 110px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.main-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  position: relative;
+  margin-top: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: #fdd835;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 12px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 60px 20px;
+  background: #fff8ec;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 30px;
+  color: #1f00e6;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 18px;
+  color: #444444;
+  font-weight: bold;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* COMPANY SECTION */
+.company-info {
+  padding: 60px 20px;
+  background: #e3f2fd;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #1e3a5f;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.card p,
+.card ul {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+/* CONTACT SECTION */
+#contact {
+  padding: 50px 20px;
+  background: #f9fbe7;
+  text-align: center;
+}
+
+#contact h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1e3a5f;
+}
+
+#contact p {
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+}
+
+/* HAMBURGER MENU - RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1e3a5f;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .nav-links li a {
+    color: #fdd835;
+    font-size: 18px;
+  }
+}
